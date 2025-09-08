@@ -23,7 +23,7 @@ Python script το οποίο ανακτά άρθρα από RSS feed, τα συ
    ακολούθως
 
    ```bash
-   ollama pull ilsp/llama-krikri-8b-instruct
+   ollama pull ilsp/llama-krikri-8b-instruct:latest
    ```
 4. Σε ορισμένους υπολογιστές χρειάζεται να "τρέξετε" το `Python Install Certificates script` (στο `MacOS` θα το βρείτε στο `Applications/Python/Install Certificates.command`)
 
