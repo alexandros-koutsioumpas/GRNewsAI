@@ -1,6 +1,6 @@
 # 📰 Greek News AI Digest
 
-Python script το οποίο ανακτά άρθρα από RSS feed, τα συνοψίψει χρησιμοποιώντας το LLM [llama Krikri](https://ollama.com/ilsp/llama-krikri-8b-instruct) (μέσω Ollama), και τελικά παράγει ένα συνθετικό σύντομο δελτίο ειδήσεων σε PDF format και σε MP3 audio στα ελληνικά. Ο κώδικας βασίστηκε εκτεταμένα στο project [News02](https://github.com/kliewerdaniel/News02)
+Python script το οποίο ανακτά άρθρα από RSS feed που καθορίζονται από τον χρήστη, τα συνοψίψει τοπικά στον υπολογιστή του χρήστη χρησιμοποιώντας το LLM [llama Krikri](https://ollama.com/ilsp/llama-krikri-8b-instruct) (μέσω Ollama), και τελικά παράγει ένα συνθετικό σύντομο δελτίο ειδήσεων σε PDF format και σε MP3 audio στα ελληνικά. Ο κώδικας βασίστηκε εκτεταμένα στο project [News02](https://github.com/kliewerdaniel/News02)
 
 ---
 
