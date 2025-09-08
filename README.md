@@ -31,7 +31,7 @@ Python script το οποίο ανακτά άρθρα από RSS feed, τα συ
 
 ## 📄 feeds_gr.yaml το αρχείο περιέχει τα RSS feeds
 
-μπορείτε να προσθέσετε RSS links στο αρχείο. Με '#' στην αρχή της γραμμής η πηγή θα αγνοηθεί. Αν ο κώδικας αργεί στο μηχάνημα σας αφαιρέστε πηγές.
+μπορείτε να προσθέσετε RSS links στο αρχείο. Με '#' στην αρχή της γραμμής η πηγή θα αγνοηθεί.
 
 ```yaml
 feeds:
@@ -53,6 +53,8 @@ feeds:
 #  - "https://www.newsbomb.gr/oles-oi-eidhseis?format=feed&type=rss"
 #  - "https://www.protagon.gr/feed"
 ```
+
+Αν ο κώδικας αργεί στο μηχάνημα σας, αφαιρέστε πηγές.
 
 ---
 
@@ -79,7 +81,7 @@ python news_digest_gr.py
 
 ## 🧠 Tips
 
-Με 10 RSS feed και `max_articles=25` σε ένα MacBook Pro M4 η παραγωγή του δελτίου διαρκεί ~20min.. 
+Με 10 RSS feed και `max_articles=25` σε ένα MacBook Pro M4 η παραγωγή του δελτίου διαρκεί ~30min.. 
 
 - Με λιγότερα `max_articles` ο κώδικας τρέχει γρηγορότερα
 - Αλλάζοντας το `SUMMARY_MODEL` και `BROADCAST_MODEL` σε quantized KriKri π.χ. (ilsp/llama-krikri-8b-instruct:q3_k_m) ίσως κάνει τον κώδικα πιο γρήγορο σε σχετικά παλιά μηχανήματα.
