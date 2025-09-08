@@ -63,7 +63,7 @@ python news_digest_gr.py
 ```
 
 Το script θα:
-- Ανακτήσει 50 άρθρα (μέγιστο) ανα feed
+- Ανακτήσει 25 άρθρα (μέγιστο) ανα feed
 - θα τα συνοψίσει
 - θα παράγει ένα συνεκτικό δελτίο σε μορφή markdown text, pdf document και mp3 audio
 
