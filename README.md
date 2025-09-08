@@ -35,19 +35,8 @@ Python script το οποίο ανακτά άρθρα από RSS feed που κ�
 
 ```yaml
 feeds:
-  - "https://news.google.com/rss?gl=GR&hl=el&ceid=GR:el"
-  - "https://feeds.feedburner.com/kathimerini/DJpy"
   - "https://www.tanea.gr/feed/"
   - "https://www.tovima.gr/feed/"
-  - "https://www.protothema.gr/rsscategory/rss/"
-  - "https://www.naftemporiki.gr/newsroom/feed/"
-  - "https://www.ethnos.gr/rss"
-  - "http://feeds.feedburner.com/skai/Uulu"
-  - "https://tvxs.gr/feed/"
-  - "https://www.ot.gr/feed"
-#  - "https://www.newsit.gr/feed/"
-#  - "https://www.megatv.com/feed/"
-#  - "https://www.in.gr/feed/"
 #  - "https://www.news.gr/rss.ashx"
 #  - "https://www.902.gr/feed/featured"
 #  - "https://www.newsbomb.gr/oles-oi-eidhseis?format=feed&type=rss"
