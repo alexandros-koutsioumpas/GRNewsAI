@@ -70,7 +70,7 @@ python news_digest_gr.py
 
 ## 🧠 Tips
 
-Με 10 RSS feed και `max_articles=25` σε ένα MacBook Pro M4 η παραγωγή του δελτίου διαρκεί ~30min.. 
+Με 10 RSS feed και `max_articles=25` σε ένα MacBook Pro M4 η παραγωγή του δελτίου διαρκεί ~30min. Γενικά σε PC που δεν έχουν GPU και VRAM αρκετή να "σηκώσει" το Llama KriKri αναμένεται το runtime να είναι αρκετά μεγαλύτερο.
 
 - Με λιγότερα `max_articles` ο κώδικας τρέχει γρηγορότερα
 - Αλλάζοντας το `SUMMARY_MODEL` και `BROADCAST_MODEL` σε quantized KriKri π.χ. (ilsp/llama-krikri-8b-instruct:q3_k_m) ίσως κάνει τον κώδικα πιο γρήγορο σε σχετικά παλιά μηχανήματα.
