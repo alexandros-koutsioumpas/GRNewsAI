@@ -74,7 +74,7 @@ python news_digest_gr.py
 
 - Με λιγότερα `max_articles` ο κώδικας τρέχει γρηγορότερα
 - Αλλάζοντας το `SUMMARY_MODEL` και `BROADCAST_MODEL` σε quantized KriKri π.χ. (ilsp/llama-krikri-8b-instruct:q3_k_m) ίσως κάνει τον κώδικα πιο γρήγορο σε σχετικά παλιά μηχανήματα.
-- Μια άλλη ιδεά σε περίπτωση που το Llama Krikri είναι πολύ "βαρύ" για το μηχάνημα, είναι η χρήση του Meltemi Instruct (7B model) ως `SUMMARY_MODEL` και `BROADCAST_MODEL` (ilsp/meltemi-instruct-v1.5) και η χρήση 4-5 RSS feeds καθώς το Meltemi έχει αρκετά μικρότερο context length.
+- Μια άλλη ιδεά σε περίπτωση που το Llama Krikri είναι πολύ "βαρύ" για το μηχάνημα, είναι η χρήση του Meltemi Instruct (7B model) ως `SUMMARY_MODEL` και `BROADCAST_MODEL` (ilsp/meltemi-instruct-v1.5) και ο περιορισμός σε 3-4 RSS feeds καθώς το Meltemi έχει αρκετά μικρότερο context length.
 ---
 
 ## 🔒 License
