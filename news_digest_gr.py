@@ -122,11 +122,14 @@ def save_digest(digest_text, output_dir='.'):
     filename = os.path.join(output_dir, f'GR_digest_{timestamp}.md')
     with open(filename, 'w') as file:
         file.write(digest_text)
-    #pdf = MarkdownPdf(toc_level=4, optimize=True)
-    pdf = MarkdownPdf(optimize=True)
-    pdf.add_section(Section(open(filename, encoding='utf-8').read()))
-    pdf.meta["title"] = "News Bulletin"
-    pdf.save('Bulletin_GR.pdf')
+    try:
+        #pdf = MarkdownPdf(toc_level=4, optimize=True)
+        pdf = MarkdownPdf(optimize=True)
+        pdf.add_section(Section(open(filename, encoding='utf-8').read()))
+        pdf.meta["title"] = "News Bulletin"
+        pdf.save('Bulletin_GR.pdf')
+    except:
+        print('Πρόβλημα με την παραγωγή του PDF..')
     return filename  # return path for TTS to use
 
 # Convert broadcast to speech with timestamped filename
