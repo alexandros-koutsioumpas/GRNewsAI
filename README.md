@@ -73,8 +73,8 @@ python news_digest_gr.py
 Με 10 RSS feed και `max_articles=25` σε ένα MacBook Pro M4 η παραγωγή του δελτίου διαρκεί ~30min. Γενικά σε PC που δεν έχουν GPU και VRAM αρκετή να "σηκώσει" το Llama KriKri αναμένεται το runtime να είναι αρκετά μεγαλύτερο.
 
 - Με λιγότερα `max_articles` ο κώδικας τρέχει γρηγορότερα
-- Αλλάζοντας το `SUMMARY_MODEL` και `BROADCAST_MODEL` σε quantized KriKri π.χ. (ilsp/llama-krikri-8b-instruct:q3_k_m) ίσως κάνει τον κώδικα πιο γρήγορο σε σχετικά παλιά μηχανήματα.
-- Μια άλλη ιδεά σε περίπτωση που το Llama Krikri είναι πολύ "βαρύ" για το μηχάνημα, είναι η χρήση του Meltemi Instruct (7B model) ως `SUMMARY_MODEL` και `BROADCAST_MODEL` (ilsp/meltemi-instruct-v1.5) και ο περιορισμός σε 3-4 RSS feeds καθώς το Meltemi έχει αρκετά μικρότερο context length. Ίσως θα μπορούσαν να δοκιμαστούν και "ελαφρύτερα" μοντέλα που δεν είναι optimized για την ελληνική γλώσσα.
+- Αλλάζοντας το `SUMMARY_MODEL` και `BROADCAST_MODEL` σε "ελαφρύτερο" μοντέλο και ας μην είναι optimized στα ελληνικά π.χ. [llama3.2:latest](https://ollama.com/library/llama3.2:3b) ίσως κάνει τον κώδικα πολύ πιο γρήγορο σε σχετικά παλιά μηχανήματα. Βέβαια θα είναι αναμενώμενη η πτώση της ποιότητας του δελτίου (to be checked)..
+
 ---
 
 ## 🔒 License
