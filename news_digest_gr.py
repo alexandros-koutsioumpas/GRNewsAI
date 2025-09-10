@@ -13,8 +13,8 @@ __date__ = "2025/09/08"
 __status__ = "v0.1"
 
 # === CONFIGURABLE MODELS ===
-SUMMARY_MODEL = 'ilsp/llama-krikri-8b-instruct:latest' # alternatively use the lighter "ilsp/llama-krikri-8b-instruct:q3_k_m"
-BROADCAST_MODEL = 'ilsp/llama-krikri-8b-instruct:latest' # alternatively use the lighter "ilsp/llama-krikri-8b-instruct:q3_k_m"
+SUMMARY_MODEL = 'ilsp/llama-krikri-8b-instruct:latest' # alternatively use "gemma3:4b" on older machines with less RAM
+BROADCAST_MODEL = 'ilsp/llama-krikri-8b-instruct:latest' # alternatively use "gemma3:4b" on older machines with less RAM
 TTS_VOICE = "el-GR-NestorasNeural" # Change to "el-GR-AthinaNeural" for female voice
 # ===========================
 
