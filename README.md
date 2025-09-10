@@ -47,7 +47,7 @@ feeds:
 
 ---
 
-## 🚀 Running the Script
+## 🚀 Εκτέλεση του Script
 
 ```bash
 python news_digest_gr.py
