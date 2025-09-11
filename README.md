@@ -1,6 +1,6 @@
 # 📰 Greek News AI Digest
 
-![alt text](https://github.com/alexandros-koutsioumpas/GRNewsAIGRNewsAI_image/image.jpeg?raw=true)
+![alt text](https://github.com/alexandros-koutsioumpas/GRNewsAI/GRNewsAI_image.jpeg?raw=true)
 
 Python script το οποίο ανακτά άρθρα από RSS feed που καθορίζονται από τον χρήστη, τα συνοψίζει τοπικά στον υπολογιστή του χρήστη χρησιμοποιώντας το LLM [Llama Krikri](https://ollama.com/ilsp/llama-krikri-8b-instruct) (μέσω Ollama), και τελικά παράγει ένα συνθετικό σύντομο δελτίο ειδήσεων σε PDF format και σε MP3 audio στα ελληνικά για προσωπική χρήση. Ο κώδικας βασίστηκε εκτεταμένα στο project [News02](https://github.com/kliewerdaniel/News02) και σε αυτό το στάδιο αποτελεί ένα πείραμα για το πως μπορεί κάποιος τοπικά στο μηχάνημα του (άρα με ασφάλεια και κόστος μόνο την ενέργεια που καταναλώνει η GPU/CPU) να χρησιμοποιεί μεγάλα γλωσσικά μοντέλα για την "διύλιση" πληροφορίας.
 
