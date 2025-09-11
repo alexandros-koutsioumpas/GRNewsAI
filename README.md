@@ -33,12 +33,12 @@ Python script το οποίο ανακτά άρθρα από RSS feed που κ�
 
 ## 📄 feeds_gr.yaml το αρχείο περιέχει τα RSS feeds
 
-Οι πηγές RSS στο αρχείο είναι ενδεικτικές, μπορείτε να προσθέσετε/αφαιρέσετε RSS links. Με '#' στην αρχή της γραμμής η πηγή θα αγνοηθεί.
+Οι πηγές RSS στο αρχείο είναι ενδεικτικές, μπορείτε να προσθέσετε/αφαιρέσετε RSS links. Με '#' στην αρχή της γραμμής η πηγή θα αγνοηθεί. Πριν την πρώτη εκτέλεση του script ο χρήστης οφείλει να διαμορφώσει το αρχείο με τις πηγές που επιθυμεί.
 
 ```yaml
 feeds:
-  - "https://www.tanea.gr/feed/"
-  - "https://www.tovima.gr/feed/"
+#  - "https://www.tanea.gr/feed/"
+#  - "https://www.tovima.gr/feed/"
 #  - "https://www.news.gr/rss.ashx"
 #  - "https://www.902.gr/feed/featured"
 #  - "https://www.newsbomb.gr/oles-oi-eidhseis?format=feed&type=rss"
