@@ -2,7 +2,7 @@
 # αφαιρώντας το hashtag '#' από την αρχή κάθε γραμμής
 # ή προσθέτοντας επιπλέον πηγές..
 feeds:
-#  - "https://news.google.com/rss?gl=GR&hl=el&ceid=GR:el"
+  - "https://news.google.com/rss?gl=GR&hl=el&ceid=GR:el"
 #  - "https://feeds.feedburner.com/kathimerini/DJpy"
 #  - "https://www.tanea.gr/feed/"
 #  - "https://www.tovima.gr/feed/"
