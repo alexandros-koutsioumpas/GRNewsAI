@@ -51,6 +51,8 @@ feeds:
 
 ## 🚀 Εκτέλεση του Script
 
+αφού έχετε κατάλληλα διαμορφώσει το αρχείο `feeds_gr.yaml`
+
 ```bash
 python news_digest_gr.py
 ```
