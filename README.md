@@ -69,16 +69,16 @@ python news_digest_gr.py
 
 ## 🗣️ Ρυθμίσεις
 
-### Για τη ρύθμιση μοντέλου, μεταβλητές `SUMMARY_MODEL` και `BROADCAST_MODEL`
+**Για τη ρύθμιση μοντέλου, μεταβλητές `SUMMARY_MODEL` και `BROADCAST_MODEL`**
 
-- `ilsp/llama-krikri-8b-instruct:latest` (defaul)
+- `ilsp/llama-krikri-8b-instruct:latest` (default)
 
-### Για τη ρύθμιση ollama/LMStudio, μεταβλητή `ENGINE`
+**Για τη ρύθμιση ollama/LMStudio, μεταβλητή `ENGINE`**
 
 - `ollama` (default)
 - `LMStudio` (γυναικεία)
 
-### Για τη ρύθμιση φωνής, μεταβλητή `TTS_VOICE`
+**Για τη ρύθμιση φωνής, μεταβλητή `TTS_VOICE`**
 
 - `el-GR-NestorasNeural` (default, ανδρική)
 - `el-GR-AthinaNeural` (γυναικεία)
