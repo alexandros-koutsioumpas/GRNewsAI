@@ -9,3 +9,4 @@ ollama
 tqdm
 markdown-pdf
 googlenewsdecoder
+requests
