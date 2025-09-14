@@ -28,7 +28,7 @@ Python3.8+ script το οποίο ανακτά άρθρα από RSS feed που
    ollama pull ilsp/llama-krikri-8b-instruct:latest
    ```
 
-   εναλλακτικά εγκατάσταση **LMStudio**, του μοντέλου `llama-krikri` και μεταβολή της μεταβλητής `ENGINE = 'LMStudio'`. (Thanks to [T. Kleisas](https://github.com/tkleisas).
+   εναλλακτικά εγκατάσταση **LMStudio**, του μοντέλου `llama-krikri` και μεταβολή της μεταβλητής `ENGINE = 'LMStudio'`. (Merci [T. Kleisas](https://github.com/tkleisas)!)
    
 5. Σε ορισμένους υπολογιστές χρειάζεται να "τρέξετε" το `Python Install Certificates script` (στο `MacOS` θα το βρείτε στο `Applications/Python/Install Certificates.command`)
 
