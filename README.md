@@ -2,7 +2,7 @@
 
 ![alt text](GRnewsAI_image.jpeg?raw=true)
 
-Python3.8+ script το οποίο ανακτά άρθρα από RSS feed που καθορίζονται από τον χρήστη, τα συνοψίζει τοπικά στον υπολογιστή του χρήστη χρησιμοποιώντας το LLM [Llama Krikri](https://ollama.com/ilsp/llama-krikri-8b-instruct) (μέσω Ollama), και τελικά παράγει ένα συνθετικό σύντομο δελτίο ειδήσεων σε PDF format και σε MP3 audio στα ελληνικά για αυστηρά προσωπική χρήση. Αποτελεί ευθύνη του χρήστη ο σεβασμός των κανόνων πνευματικής ιδιοκτησίας των πηγών που χρησιμοποιεί. Ο κώδικας βασίστηκε εκτεταμένα στο project [News02](https://github.com/kliewerdaniel/News02) και σε αυτό το στάδιο αποτελεί ένα πείραμα για το πως μπορεί κάποιος τοπικά στο μηχάνημα του (άρα με ασφάλεια και κόστος μόνο την ενέργεια που καταναλώνει η GPU/CPU) να χρησιμοποιεί μεγάλα γλωσσικά μοντέλα για τη "διύλιση" πληροφορίας.
+Python3.8+ script το οποίο ανακτά άρθρα από RSS feed που καθορίζονται από τον χρήστη, τα συνοψίζει τοπικά στον υπολογιστή του χρήστη χρησιμοποιώντας το LLM [Llama Krikri](https://ollama.com/ilsp/llama-krikri-8b-instruct) (μέσω Ollama ή LMStudio), και τελικά παράγει ένα συνθετικό σύντομο δελτίο ειδήσεων σε Markdown/PDF format και σε MP3 audio στα ελληνικά για αυστηρά προσωπική χρήση. Αποτελεί ευθύνη του χρήστη ο σεβασμός των κανόνων πνευματικής ιδιοκτησίας των πηγών που χρησιμοποιεί. Ο κώδικας βασίστηκε εκτεταμένα στο project [News02](https://github.com/kliewerdaniel/News02) και σε αυτό το στάδιο αποτελεί ένα πείραμα για το πως μπορεί κάποιος τοπικά στο μηχάνημα του (άρα με ασφάλεια και κόστος μόνο την ενέργεια που καταναλώνει η GPU/CPU) να χρησιμοποιεί μεγάλα γλωσσικά μοντέλα για τη "διύλιση" πληροφορίας.
 
 ---
 
@@ -27,7 +27,10 @@ Python3.8+ script το οποίο ανακτά άρθρα από RSS feed που
    ```bash
    ollama pull ilsp/llama-krikri-8b-instruct:latest
    ```
-4. Σε ορισμένους υπολογιστές χρειάζεται να "τρέξετε" το `Python Install Certificates script` (στο `MacOS` θα το βρείτε στο `Applications/Python/Install Certificates.command`)
+
+   εναλλακτικά εγκατάσταση **LMStudio**, του μοντέλου `llama-krikri` και μεταβολή της μεταβλητής `ENGINE = 'LMStudio'`.
+   
+5. Σε ορισμένους υπολογιστές χρειάζεται να "τρέξετε" το `Python Install Certificates script` (στο `MacOS` θα το βρείτε στο `Applications/Python/Install Certificates.command`)
 
 ---
 
@@ -64,7 +67,18 @@ python news_digest_gr.py
 
 ---
 
-## 🗣️ Επιλογή Φωνής
+## 🗣️ Ρυθμίσεις
+
+# Για τη ρύθμιση μοντέλου, μεταβλητές `SUMMARY_MODEL` και `BROADCAST_MODEL`
+
+- `ilsp/llama-krikri-8b-instruct:latest` (defaul)
+
+# Για τη ρύθμιση ollama/LMStudio, μεταβλητή `ENGINE`
+
+- `ollama` (default)
+- `LMStudio` (γυναικεία)
+
+# Για τη ρύθμιση φωνής, μεταβλητή `TTS_VOICE`
 
 - `el-GR-NestorasNeural` (default, ανδρική)
 - `el-GR-AthinaNeural` (γυναικεία)
