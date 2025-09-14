@@ -76,7 +76,7 @@ python news_digest_gr.py
 **Για τη ρύθμιση ollama/LMStudio, μεταβλητή `ENGINE`**
 
 - `ollama` (default)
-- `LMStudio
+- `LMStudio`
 
 **Για τη ρύθμιση φωνής, μεταβλητή `TTS_VOICE`**
 
