@@ -15,12 +15,13 @@
 __author__ = "Alexandros Koutsioumpas"
 __credits__ = "T. Kleisas"
 __license__ = "MIT"
-__date__ = "2025/09/14"
-__status__ = "v0.2"
+__date__ = "2025/10/27"
+__status__ = "v0.3"
 
 # Change Log
 # versiom 0.1: first release
 # version 0.2: LMStudio support and improved Windows compatibility (many thanks to T. Kleisas "https://github.com/tkleisas")
+# version 0.3: Reduction of context length (when using ollama) for execution speed in less capable machines 
 
 
 # === CONFIGURABLE MODELS ===
@@ -131,7 +132,7 @@ def summarize_with_llm(text, model=SUMMARY_MODEL):
         f"{text}\n\nΠερίληψη:"
     )
     if ENGINE == 'ollama':
-        response = ollama.chat(model=model, messages=[{"role": "user", "content": prompt}])
+        response = ollama.chat(model=model, messages=[{"role": "user", "content": prompt}], options = {"num_ctx": 10240})
     if ENGINE == 'LMStudio':
         response = LMStudio.chat(model=model, messages=[{"role": "user", "content": prompt}])
     return response['message']['content']
@@ -189,7 +190,7 @@ def generate_broadcast(summaries, model=BROADCAST_MODEL):
     )
     print("Αριθμός λέξεων στο prompt: ", len(prompt.split()), ".")
     if ENGINE == 'ollama':
-        response = ollama.chat(model=model, messages=[{"role": "user", "content": prompt}])
+        response = ollama.chat(model=model, messages=[{"role": "user", "content": prompt}], options = {"num_ctx": 40960})
     if ENGINE == 'LMStudio':
         response = LMStudio.chat(model=model, messages=[{"role": "user", "content": prompt}])
     return response['message']['content']
