@@ -92,6 +92,7 @@ python news_digest_gr.py
 
 - Με λιγότερα `max_articles` ο κώδικας τρέχει γρηγορότερα
 - Αλλάζοντας το `SUMMARY_MODEL` και `BROADCAST_MODEL` σε "ελαφρύτερο" μοντέλο (π.χ. [gemma3:4b]([https://ollama.com/ilsp/meltemi-instruct](https://ollama.com/library/gemma3:4b))) και περιορίζοντας τα RSS feed βοηθάει για να τρέξει κάποιος τον κώδικα σε σχετικά παλιά μηχανήματα με λιγότερη RAM και χωρίς GPU, αλλά το Llama KriKri κάνει πολύ καλύτερη δουλειά..
+- Χρησιμοποιώντας ollama ENGINE οι απαιτήσεις σε RAM ή VRAM είναι μικρές, γύρω στα 6Gb.
 
 ---
 
